@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tejas — Computer Science student, builder and aspiring software developer.">
+<title>Tejas | Portfolio</title>
+<style>
+:root{--bg:#0b0d12;--panel:#121722;--text:#edf1f7;--muted:#9ba7b8;--line:#252e3c;--accent:#8daeff;--accent2:#b8c9ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#17233c 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.logo{font-weight:800;letter-spacing:.08em}.logo span{color:var(--accent)}.navlinks{display:flex;gap:26px;color:var(--muted);font-size:14px}.navlinks a:hover,.textlink:hover{color:var(--accent)}
+.hero{padding:112px 0 94px;max-width:800px}.eyebrow{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}.hero h1{font-size:clamp(44px,8vw,76px);line-height:1.06;letter-spacing:-.055em;margin:18px 0}.hero h1 em{font-style:normal;color:var(--accent2)}.hero p{max-width:650px;color:var(--muted);font-size:18px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.btn{padding:11px 18px;border:1px solid var(--line);border-radius:9px;font-weight:650;font-size:14px}.btn.primary{background:var(--accent);color:#0b1020;border-color:var(--accent)}.btn:hover{transform:translateY(-2px)}
+section{padding:60px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:baseline;gap:14px;margin-bottom:26px}.section-head small{color:var(--accent);font-weight:700}.section-head h2{font-size:27px;margin:0;letter-spacing:-.03em}.about{max-width:760px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:linear-gradient(145deg,#151c29,#10151e);border:1px solid var(--line);border-radius:14px;padding:24px}.card h3{margin:0 0 8px;font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px}.tagrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.tag{font-size:12px;color:#c9d5eb;border:1px solid #344158;border-radius:20px;padding:4px 10px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{padding:10px 14px;border:1px solid var(--line);background:var(--panel);border-radius:9px;color:#d7deea;font-size:14px}
+.education{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.education strong{display:block;font-size:18px}.education p{color:var(--muted);margin:4px 0}.date{color:var(--accent);font-size:13px;white-space:nowrap}
+.contactbox{border:1px solid #344158;background:linear-gradient(120deg,#172238,#111722);border-radius:16px;padding:30px}.contactbox p{color:var(--muted);max-width:580px}footer{padding:28px 0;color:#778397;font-size:13px;display:flex;justify-content:space-between;gap:20px}
+@media(max-width:650px){.navlinks{gap:12px;font-size:12px}.hero{padding:82px 0 66px}.grid{grid-template-columns:1fr}.education{display:block}.date{display:block;margin-top:6px}section{padding:45px 0}footer{display:block}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a class="logo" href="#">T<span>.</span></a><div class="navlinks"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></nav>
+<main>
+<header class="hero">
+<div class="eyebrow">Computer Science Student · Bengaluru, India</div>
+<h1>Hi, I'm Tejas.<br><em>I build things with code.</em></h1>
+<p>I'm a Computer Science undergraduate at BMS Institute of Technology and Management, interested in software development, problem-solving and building useful products.</p>
+<div class="actions"><a class="btn primary" href="#projects">Explore my work ↘</a><a class="btn" href="#contact">Get in touch</a></div>
+</header>
+<section id="about">
+<div class="section-head"><small>01</small><h2>About me</h2></div>
+<p class="about">I'm a second-year Computer Science student at BMSIT, Bengaluru, working towards becoming a strong software developer. I'm strengthening my programming foundations and learning data structures and algorithms while building practical projects. I enjoy turning ideas into simple, usable tools and learning by shipping.</p>
+<div class="education" style="margin-top:28px"><div><strong>BMS Institute of Technology and Management</strong><p>B.E. in Computer Science · Bengaluru, India</p></div><span class="date">Expected graduation: 2029</span></div>
+</section>
+<section id="projects">
+<div class="section-head"><small>02</small><h2>Selected projects</h2></div>
+<div class="grid">
+<article class="card"><h3>Code Quanta — Repository Health Analyzer</h3><p>A web-based codebase health dashboard concept that analyzes a GitHub repository and presents repository insights. Built with a frontend hosted on Vercel and a backend service on Replit.</p><div class="tagrow"><span class="tag">Web Development</span><span class="tag">GitHub</span><span class="tag">Vercel</span><span class="tag">Replit</span></div></article>
+<article class="card"><h3>Campus Leaf & Waste Collection Robot</h3><p>A campus sustainability concept for a sensor-assisted robot that collects dry leaves and litter around tree-covered areas, with attention to visibility and safe movement around campus vehicles.</p><div class="tagrow"><span class="tag">Concept Project</span><span class="tag">Sensors</span><span class="tag">Problem Solving</span></div></article>
+</div>
+</section>
+<section id="skills">
+<div class="section-head"><small>03</small><h2>Skills & learning</h2></div>
+<div class="skills"><span class="skill">C Programming</span><span class="skill">Python Fundamentals</span><span class="skill">Data Structures & Algorithms — Learning</span><span class="skill">GitHub</span><span class="skill">Vercel</span><span class="skill">Replit</span><span class="skill">Problem Solving</span></div>
+</section>
+<section id="contact">
+<div class="section-head"><small>04</small><h2>Let's connect</h2></div>
+<div class="contactbox"><h3>Have an idea or opportunity?</h3><p>I'm open to connecting with developers, collaborating on projects and exploring internship opportunities.</p><div class="actions"><a class="btn primary" href="mailto:YOUR_EMAIL">Email me ↗</a><a class="btn" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">GitHub ↗</a><a class="btn" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div>
+</section>
+</main>
+<footer><span>© 2026 Tejas</span><span>Designed & built with care.</span></footer>
+</div>
+</body>
+</html>
